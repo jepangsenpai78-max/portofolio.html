@@ -203,10 +203,9 @@ header {
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
-    font-weight: 13px;
-    border-right: 10px;
+    font-weight: 500;
     border-radius: 20px;
-    transition: background 0.5,transform 0.5s;
+    transition: background 0.5s,transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
                1px 1px 40px #0053b8f7
 }
@@ -416,7 +415,7 @@ section{
 }
 .radial-bars .radial-bar .progress-bar{
     stroke-width: 10;
-    atop-color: black;
+    stroke: #000;
     fill: transparent;
     stroke-dasharray : 502;
     stroke-dashoffset: 502;
@@ -426,7 +425,7 @@ section{
 }
 @keyframes animate-bar{
     100%{
-        stroke-dashoffset -1;
+        stroke-dashoffset: -1;
     }
 }
 .path {
@@ -497,22 +496,22 @@ section{
 
 @keyframes animate-path1{
     100%{
-        stroke-dashoffset: 50;; /*satuan mulai 50 */
+        stroke-dashoffset: 50; /*satuan mulai 50 */
     }
 }
 @keyframes animate-path2{
     100%{
-        stroke-dashoffset: 100;;
+        stroke-dashoffset: 100;
     }
 }
 @keyframes animate-path3{
     100%{
-        stroke-dashoffset: 125;;
+        stroke-dashoffset: 125;
     }
 }
 @keyframes animate-path4{
     100%{
-        stroke-dashoffset: 75;;
+        stroke-dashoffset: 75;
     }
 }
 
@@ -679,7 +678,7 @@ section{
     color: #0ef;
     font-size: 20px;
     font-weight: 600;
-    transition: all .40s ease;
+    transition: all 0.40s ease;
 
 }
 .contact-list li a:hover{
